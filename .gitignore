@@ -1,0 +1,44 @@
+# Dependencies and build artifacts
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Local financial data, uploads, exports and backups
+server/data/*
+!server/data/.gitkeep
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.bak
+/backups/
+/exports/
+# Private bank-history generator; do not restore to public source
+/scripts/generate-2018-2019-csv.js
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.npmrc
+
+# OS and editor files
+.DS_Store
+._*
+__MACOSX/
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+.cursor/
+*.swp
+*.swo
+
+# Reports, caches and logs
+playwright-report/
+test-results/
+coverage/
+*.log
+npm-debug.log*

@@ -1,0 +1,5 @@
+date,type,name,amount_in,amount_out,ref
+2024-01-15,transfer,Yossi Cohen,,300,REF001
+2024-01-16,standing order,Rachel Levi,,350.50,REF002
+2024-01-20,transfer,Cleaning Service,1200,,REF003
+2024-01-25,transfer,Avraham Israeli,,300,REF004
