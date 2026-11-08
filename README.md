@@ -117,7 +117,7 @@ npm run test:e2e
 
 Vitest covers server parsing/matching/routes/security and client hooks/components/API behavior. Server route tests use in-memory SQLite; browser tests use the real local API and database. Run browser tests in a disposable copy, never an installation containing personal records.
 
-A proposed GitHub Actions workflow runs lint, tests, builds, dependency audits, and Chromium tests on a fresh runner. It has not run on GitHub before publication. See [the review](docs/publication-review.md) for locally verified results.
+The GitHub Actions workflow runs lint, tests, builds, dependency audits, and Chromium tests on Ubuntu 24.04. The runner version is explicit because the bundled Playwright version does not support Ubuntu 26.04. See [Actions](https://github.com/Laura-Broder/building-fund-manager-public/actions) for current CI results and [the review](docs/publication-review.md) for locally verified results.
 
 ## Privacy and security
 

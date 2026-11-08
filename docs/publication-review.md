@@ -59,7 +59,7 @@ Environment: Node.js 24.22.1, npm 11.9.0, Linux.
 
 The client bundle still triggers Vite's large-chunk warning (approximately 674 kB before gzip). No performance target or bundle optimization achievement is claimed. One client test intentionally renders a context consumer outside its provider and emits React diagnostics while passing. Vitest reports a future config-loader compatibility warning for the server's CommonJS package; current compilation and tests pass.
 
-The CI workflow is proposed source only. It has not executed on GitHub, and no passing remote status or badge is claimed. Audit results are a point-in-time advisory check, not a security guarantee.
+After publication, the initial GitHub run passed installation, lint, unit tests, builds, and dependency audits but failed to install Chromium because ubuntu-latest selected Ubuntu 26.04, unsupported by Playwright 1.58.2. The workflow now pins Ubuntu 24.04 and uses current first-party checkout/setup actions. See the repository Actions page for the latest run status. Audit results are a point-in-time advisory check, not a security guarantee.
 
 ## Remaining limits and approval items
 
